@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tinyfetch • GitHub-style Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+<header class="navbar">
+  <div class="nav-inner">
+    <h1 class="logo">tinyfetch</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="configPage.html">Configuration</a>
+      <a href="#commands">Install</a>
+      <a href="https://github.com/tinyplayerss/tinyfetch" target="_blank">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <h2>A tiny fast fetch tool.</h2>
+    <p class="subtitle">Lightweight • Minimal • Written in pure C</p>
+
+    <div class="github-card">
+      <pre>
+   /$$     /$$                    
+  | $$    |__/                    
+ /$$$$$$   /$$ /$$$$$$$  /$$   /$$
+|_  $$_/  | $$| $$__  $$| $$  | $$
+  | $$    | $$| $$  \ $$| $$  | $$
+  | $$ /$$| $$| $$  | $$| $$  | $$
+  |  $$$$/| $$| $$  | $$|  $$$$$$$
+   \___/  |__/|__/  |__/ \____  $$
+                         /$$  | $$
+                        |  $$$$$$/
+                         \______/ 
+
+User:         tinyplayerss@ThinkPad-X100e
+Installed:    2025/07/12
+OS:           Ubuntu 24.04 LTS
+Kernel:       6.1.0-37-amd64
+Shell:        bash
+WM:           XFCE
+Resolution:   1366x768
+CPU:          AMD Athlon(tm) Neo MV-40
+GPU:          Radeon HD 3200
+Uptime:       0 days, 4 hours, 12 minutes
+RAM:          1426 MiB / 2215 MiB
+Disk:         13.0 GB / 915.8 GB
+Packages:     2268
+Time:         0.1809 seconds
+      </pre>
+    </div>
+
+    <a class="btn-primary" href="#commands">Install tinyfetch</a>
+  </div>
+</section>
+
+<!-- INSTALL SECTION -->
+<section id="commands">
+  <div class="container">
+    <h2>Installation</h2>
+
+    <div class="github-card">
+      <h3>🛠 Build from Source</h3>
+      <pre>
+wget https://github.com/tinyplayerss/tinyfetch/releases/latest/download/tinyfetch.c
+gcc tinyfetch.c -o tinyfetch
+sudo mv tinyfetch /usr/bin/
+      </pre>
+    </div>
+
+    <div class="github-card">
+      <h3>📦 Precompiled Debian Binary</h3>
+      <pre>
+wget https://github.com/tinyplayerss/tinyfetch/releases/latest/download/tinyfetch
+sudo mv tinyfetch /usr/bin/
+chmod +x /usr/bin/tinyfetch
+      </pre>
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTED ON SECTION -->
+<section id="tested">
+  <div class="container">
+    <h2>Tested On</h2>
+
+    <div class="github-card">
+      <ul class="tested-list">
+        <li>✅ Debian 12</li>
+        <li>✅ Peppermint OS (Debian Edition)</li>
+        <li>✅ Ubuntu 24.04 LTS</li>
+        <li>✅ Works over SSH (some visual features may be limited)</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  tinyfetch • Made by tinyplayerss • Hosted on GitHub Pages
+</footer>
+
+</body>
+</html>

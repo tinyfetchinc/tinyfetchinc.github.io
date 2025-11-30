@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tinyfetch Configuration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header class="navbar">
+  <div class="nav-inner">
+    <h1 class="logo">tinyfetch</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="configPage.html">Configuration</a>
+      <a href="index.html#commands">Install</a>
+      <a href="https://github.com/tinyplayerss/tinyfetch" target="_blank">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<!-- CONFIG PAGE -->
+<section id="config">
+  <div class="container">
+    <h2>tinyfetch.conf — Configuration Guide</h2>
+
+    <p class="subtitle">
+      The <code>tinyfetch.conf</code> file allows you to enable or disable individual lines of tinyfetch’s output.
+      Each option is a simple <code>true</code> / <code>false</code> toggle.
+    </p>
+
+    <div class="github-card">
+      <h3>📄 Default Configuration</h3>
+      <pre>
+# show_logo is the Branding of tinyfetch it Prints out "tiny" in the top of the script
+show_logo = true
+# show_user shows your Current user you signed in with
+show_user = true
+# show_installed Shows your installed date of when you installed the Distro OS
+show_installed = true
+# show_os Shows you which Distro Your running Right Now
+show_os = true
+# show_shell Shows you which terminal emulator/terminal server console you're using...
+# Example terminals: kitty, alacritty, gnome-terminal, konsole, bash, etc.
+show_shell = true
+# show_wm Shows your current Window Manager
+show_wm = true
+# show_resolution Shows your display resolution. Won't work over SSH sessions.
+show_resolution = true
+# show_cpu Shows your CPU Processor info
+show_cpu = true
+# show_gpu Shows your GPU/Graphics Card
+show_gpu = true
+# show_uptime Shows how long the system has been running
+show_uptime = true
+# show_ram Shows used and total system RAM
+show_ram = true
+# show_disk Shows total disk usage across all connected disks
+show_disk = true
+# show_packages Shows installed package count (Debian-based only)
+show_packages = true
+# show_time Shows how fast tinyfetch executed
+show_time = true
+      </pre>
+    </div>
+
+    <div class="github-card">
+      <h3>🔧 How It Works</h3>
+      <p>
+        tinyfetch reads <code>~/.config/tinyfetch/tinyfetch.conf</code>.
+        If a line contains <code>false</code>, tinyfetch simply skips printing that section.
+      </p>
+      <p>Example:</p>
+
+      <pre>
+show_gpu = false
+      </pre>
+
+      <p>
+        This hides the GPU line from tinyfetch’s output.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<script src="https://utteranc.es/client.js"
+        repo="[ENTER REPO HERE]"
+        issue-term="pathname"
+        label="tinyfetch comment section"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>
+
+<!-- FOOTER -->
+<footer class="footer">
+  tinyfetch • Configuration Reference • Made by tinyplayerss
+</footer>
+
+</body>
+</html>
